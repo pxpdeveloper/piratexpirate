@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract PXPToken is ERC20, Pausable, Ownable {
 
     constructor() ERC20("Pirate X Pirate", "PXP") {
-        _mint(msg.sender, 100000000 * 10 ** decimals());
+        _mint(msg.sender, 1000000000 * 10 ** decimals());
     }
 
     function pause() public onlyOwner {
